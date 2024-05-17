@@ -1,0 +1,135 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: content-box;
+}
+
+:root {
+  --color-dark: rgb(39, 38, 38);
+  --color-whitesmoke: whitesmoke;
+}
+
+body {
+  background-color: var(--color-dark);
+  font-family: 'Dosis', sans-serif;
+}
+
+div.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+#heading {
+  color: rgb(0, 0, 255);
+  text-shadow: 1px 1px var(--color-whitesmoke);
+  font-size: 60px;
+}
+
+div.top-left-side {
+  position: absolute;
+  background-color: var(--color-whitesmoke);
+  padding: 20px;
+  margin: 8px;
+  border-radius: 8px;
+  top: 0;
+  left: 0;
+  width: 300px;
+  min-height: fit-content;
+}
+div.top-left-side h2 {
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+}
+div.top-left-side ol li {
+  background-color: rgb(109, 109, 109);
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.top-left-side ol li:hover {
+  background-color: rgb(141, 141, 141);
+  cursor: pointer;
+}
+button.councel-button {
+  background-color: rgb(173, 0, 0);
+  padding: 4px;
+  border-radius: 4px;
+  justify-content: space-between;
+  width: 20px;
+  height: 20px;
+  border: none;
+  font-weight: 900;
+  color: #000000;
+}
+button.councel-button:hover {
+  background-color: rgb(255, 0, 0);
+  cursor: pointer;
+  color: #ffffff;
+}
+
+div.form {
+  background-color: var(--color-whitesmoke);
+  padding: 12px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+div.form-contral {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 4px;
+}
+
+div.form-contral input[type="text"] {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  transition: 1s;
+  margin: 8px;
+  padding: 0px 8px 0px 8px;
+}
+div.form-contral span {
+  width: 100%;
+}
+
+.error {
+  color: rgb(255, 30, 67);
+}
+
+div.form-contral input[type="text"]:focus-within {
+  transition: 1s;
+}
+div.form-contral button[class="button"] {
+  padding: 8px;
+  background-color: rgb(0, 0, 59);
+  border: none;
+  border-radius: 4px;
+  color: var(--color-whitesmoke);
+  letter-spacing: 1.5px;
+  transition: 1s;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+div.form-contral button[class="button"]:hover {
+  background-color: rgb(0, 0, 150);
+  color: var(--color-whitesmoke);
+  cursor: pointer;
+  transition: 1s;
+}
